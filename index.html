@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <button data-target="about" class="btn">About</button>
+            <button data-target="home" class="btn">Home</button>
+            <button data-target="projects" class="btn">Projects</button>
+        </div>
+    </header>
+    <section class ="part about hidden" id="about">
+        <div class="section-wrapper">
+            <div class="about-image">Shreya Singh</div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm learning web development by building porjects. I enjoy designing and experimenting 
+                    with new things.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section  class ="part hidden" id ="home">
+         <div class="section-wrapper">
+            <div class="home-text">
+                <h2>Welcome</h2>
+                <p>Exploring layouts, designs and interations.</p>
+            </div>
+            <div class="home-media">
+                <div class="media-box">
+                    <img src="tree.gif">
+                </div>
+                <div class="media-box"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "part" id = "projects">
+        <h2>Projects</h2>
+        <div class="cards">
+            <div class="card" onclick="window.open('#', '_blank')">
+                <div class="card-content">
+                    <h3 class="card-title">Project One</h3>
+                    <p class="card-desc"></p>
+                </div>
+                <div class="card-arrow"></div>
+            </div>
+            <div class="card" onclick="window.open('#', '_blank')">
+                <div class="card-content">
+                    <h3 class="card-title">Project Two</h3>
+                    <p class="card-desc"></p>
+                </div>
+                <div class="card-arrow"></div>
+            </div>
+            <div class="card" onclick="window.open('#', '_blank')">
+                <div class="card-content">
+                    <h3 class="card-title">Project Three</h3>
+                    <p class="card-desc"></p>
+                </div>
+                <div class="card-arrow"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+       
+        <!-- <img class="image" src="tree.gif" alt="No image"> -->
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
